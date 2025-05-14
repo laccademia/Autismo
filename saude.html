@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)file:///C:/Users/lacca/Downloads/saude-terapias.html -->
+<html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saúde e Terapias - Direitos da Pessoa com TEA</title>
+    <style>
+        :root {
+            --health-color: #4C95BE;
+            --light-color: #F8F9FA;
+            --dark-color: #2F2F2F;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f0f4f8;
+            color: var(--dark-color);
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .card {
+            background-color: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            margin-bottom: 30px;
+        }
+        
+        .card-header {
+            background-color: var(--health-color);
+            padding: 20px;
+            color: white;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+        
+        .card-icon {
+            font-size: 2em;
+            margin-right: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.5em;
+        }
+        
+        .card-body {
+            padding: 25px;
+        }
+        
+        .card-section {
+            margin-bottom: 20px;
+        }
+        
+        .card-section:last-child {
+            margin-bottom: 0;
+        }
+        
+        .section-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+            color: #4A4E69;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+        }
+        
+        ul, ol {
+            padding-left: 25px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 5px;
+        }
+        
+        .alert-box {
+            background-color: rgba(246, 174, 45, 0.1);
+            border-left: 4px solid #F6AE2D;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        
+        .alert-title {
+            font-weight: bold;
+            color: #F6AE2D;
+            margin-bottom: 5px;
+        }
+        
+        .documents-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 15px 0;
+        }
+        
+        .document-item {
+            background-color: #f0f4f8;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            display: flex;
+            align-items: center;
+        }
+        
+        .document-icon {
+            margin-right: 5px;
+        }
+        
+        .service-item {
+            background-color: rgba(76, 149, 190, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .service-title {
+            font-weight: bold;
+            color: var(--health-color);
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .service-icon {
+            margin-right: 8px;
+        }
+        
+        .steps-list {
+            counter-reset: steps-counter;
+            list-style-type: none;
+            padding-left: 5px;
+        }
+        
+        .steps-list li {
+            counter-increment: steps-counter;
+            margin-bottom: 12px;
+            padding-left: 30px;
+            position: relative;
+        }
+        
+        .steps-list li:before {
+            content: counter(steps-counter);
+            background-color: var(--health-color);
+            color: white;
+            font-weight: bold;
+            font-size: 0.8em;
+            border-radius: 50%;
+            width: 22px;
+            height: 22px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 0;
+            top: 2px;
+        }
+        
+        @media (max-width: 768px) {
+            .card-header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .card-icon {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+            
+            .documents-list {
+                flex-direction: column;
+            }
+        }
+
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--health-color);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 20px;
+            font-size: 1em;
+            font-weight: bold;
+            cursor: pointer;
+            margin-bottom: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #36779c;
+        }
+    </style>
+<style type="text/css" id="operaUserStyle"></style></head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-icon">🏥</div>
+                <div class="card-title">Saúde e Terapias</div>
+            </div>
+            <div class="card-body">
+                <div class="card-section">
+                    <div class="section-title">O que é garantido por lei?</div>
+                    <p>A pessoa com Transtorno do Espectro Autista (TEA) tem direito a atendimento integral de saúde, incluindo diagnóstico precoce, tratamentos, terapias e medicamentos.</p>
+                    <ul>
+                        <li><strong>Diagnóstico precoce</strong> e atendimento integral pelo SUS</li>
+                        <li><strong>Terapias multiprofissionais</strong> (psicologia, fonoaudiologia, terapia ocupacional, etc.)</li>
+                        <li><strong>Medicamentos</strong> necessários sem custo pelo SUS</li>
+                        <li><strong>Nutrição adequada</strong> quando necessária</li>
+                        <li><strong>Cobertura obrigatória</strong> pelos planos de saúde para terapias</li>
+                    </ul>
+                </div>
+                
+                <div class="card-section">
+                    <div class="section-title">Quais leis garantem estes direitos?</div>
+                    <ul>
+                        <li><strong>Lei 12.764/2012</strong> (Lei Berenice Piana) - Garante atendimento multiprofissional no SUS</li>
+                        <li><strong>Lei 13.146/2015</strong> (Lei Brasileira de Inclusão) - Reforça o direito à saúde integral</li>
+                        <li><strong>Lei 9.656/1998</strong> - Obriga os planos de saúde a cobrirem tratamentos para pessoas com TEA</li>
+                        <li><strong>Lei Estadual SP 17.744/2023</strong> - Cria Centros de Referência do Autista em São Paulo</li>
+                    </ul>
+                </div>
+                
+                <div class="card-section">
+                    <div class="section-title">Como acessar pelo SUS?</div>
+                    <ol class="steps-list">
+                        <li><strong>Busque a UBS (Unidade Básica de Saúde)</strong> mais próxima de sua residência com seus documentos pessoais e cartão SUS</li>
+                        <li><strong>Solicite consulta com médico</strong> (clínico geral, pediatra) para avaliação inicial</li>
+                        <li><strong>Peça encaminhamento</strong> para especialistas (neurologista, psiquiatra ou outros) para diagnóstico</li>
+                        <li><strong>Após diagnóstico</strong>, solicite encaminhamento para serviços de referência para terapias</li>
+                        <li><strong>Caso necessário</strong>, peça ao médico receita para medicamentos e orientação sobre como obtê-los gratuitamente</li>
+                    </ol>
+                    
+                    <div class="service-item">
+                        <div class="service-title"><span class="service-icon">🧠</span>Serviços de referência no SUS:</div>
+                        <ul>
+                            <li><strong>CAPSi</strong> (Centro de Atenção Psicossocial Infantojuvenil) - Para crianças e adolescentes</li>
+                            <li><strong>CAPS</strong> (Centro de Atenção Psicossocial) - Para adultos</li>
+                            <li><strong>CER</strong> (Centro Especializado em Reabilitação) - Para reabilitação multiprofissional</li>
+                            <li><strong>Ambulatórios de especialidades</strong> - Para acompanhamento médico especializado</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="card-section">
+                    <div class="section-title">E os planos de saúde?</div>
+                    <p>Planos de saúde são obrigados a cobrir todos os tratamentos necessários para pessoas com TEA, incluindo terapias como ABA (Análise do Comportamento Aplicada), fonoaudiologia, terapia ocupacional e psicologia, na quantidade indicada pelo médico.</p>
+                    
+                    <p><strong>Se o plano negar cobertura:</strong></p>
+                    <ol>
+                        <li>Solicite a negativa por escrito</li>
+                        <li>Apresente relatório médico detalhando a necessidade do tratamento</li>
+                        <li>Registre reclamação na ANS (Agência Nacional de Saúde Suplementar) pelo telefone 0800 701 9656 ou pelo site</li>
+                        <li>Se necessário, procure a Defensoria Pública ou advogado</li>
+                    </ol>
+                    
+                    <div class="alert-box">
+                        <div class="alert-title">IMPORTANTE!</div>
+                        <p>Os planos de saúde não podem limitar o número de sessões de terapias quando há indicação médica. Decisões judiciais têm confirmado esse direito, então não aceite limitações arbitrárias.</p>
+                    </div>
+                </div>
+                
+                <div class="card-section">
+                    <div class="section-title">Documentos necessários</div>
+                    <div class="documents-list">
+                        <div class="document-item"><span class="document-icon">📄</span> Cartão SUS</div>
+                        <div class="document-item"><span class="document-icon">📋</span> RG/CPF ou certidão de nascimento</div>
+                        <div class="document-item"><span class="document-icon">📝</span> Comprovante de residência</div>
+                        <div class="document-item"><span class="document-icon">📑</span> Laudo médico com CID (para medicamentos e terapias)</div>
+                        <div class="document-item"><span class="document-icon">📃</span> Receitas médicas (para medicamentos)</div>
+                    </div>
+                </div>
+                
+                <div class="card-section">
+                    <div class="section-title">Medicamentos de alto custo</div>
+                    <p>Os medicamentos de alto custo para tratamento de condições associadas ao TEA podem ser obtidos gratuitamente pelo Programa de Medicamentos do Componente Especializado da Assistência Farmacêutica (CEAF).</p>
+                    
+                    <p><strong>Como solicitar:</strong></p>
+                    <ol>
+                        <li>Obtenha receita médica do SUS em duas vias</li>
+                        <li>Peça ao médico que preencha o Laudo de Solicitação, Avaliação e Autorização de Medicamento (LME)</li>
+                        <li>Vá à farmácia de alto custo com os documentos (receita, LME, documentos pessoais, comprovante de residência)</li>
+                    </ol>
+                    
+                    <p><strong>Em São Paulo:</strong> Farmácias de Medicamentos Especializados (FME) ou CRIES-SEDPcD (Centro de Referência para Insumos Especiais para Pessoas com Deficiência)</p>
+                </div>
+                
+                <div class="card-section">
+                    <div class="section-title">Onde buscar esses direitos em São Paulo?</div>
+                    <ul>
+                        <li><strong>UBS (Unidade Básica de Saúde)</strong> - Porta de entrada do SUS</li>
+                        <li><strong>CAPSi</strong> - Para atendimento especializado de crianças e adolescentes</li>
+                        <li><strong>Centros de Referência do Autista</strong> - Em implementação no estado (Lei 17.744/2023)</li>
+                        <li><strong>Secretaria Municipal de Saúde</strong> - Para informações sobre serviços específicos</li>
+                        <li><strong>Ouvidoria do SUS</strong> - Para reclamações sobre atendimento</li>
+                    </ul>
+                    
+                    <p><strong>Em caso de negativa ou problemas:</strong></p>
+                    <ul>
+                        <li>Defensoria Pública do Estado</li>
+                        <li>Ministério Público Estadual</li>
+                        <li>Promotoria de Justiça de Defesa dos Interesses Difusos e Coletivos da Pessoa com Deficiência</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <button class="back-button" onclick="history.back()">← Voltar</button>
+    </div>
+
+</body></html>

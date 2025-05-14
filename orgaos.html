@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)file:///C:/Users/lacca/Downloads/orgaos-defesa-suporte.html -->
+<html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Órgãos de Defesa e Suporte - Direitos da Pessoa com TEA</title>
+    <style>
+        :root {
+            --rights-color: #3C896D;
+            --light-color: #F8F9FA;
+            --dark-color: #2F2F2F;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f0f4f8;
+            color: var(--dark-color);
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .card {
+            background-color: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            margin-bottom: 30px;
+        }
+        
+        .card-header {
+            background-color: var(--rights-color);
+            padding: 20px;
+            color: white;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+        
+        .card-icon {
+            font-size: 2em;
+            margin-right: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.5em;
+        }
+        
+        .card-body {
+            padding: 25px;
+        }
+        
+        .card-section {
+            margin-bottom: 20px;
+        }
+        
+        .card-section:last-child {
+            margin-bottom: 0;
+        }
+        
+        .section-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+            color: #4A4E69;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+        }
+        
+        ul, ol {
+            padding-left: 25px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 5px;
+        }
+        
+        .alert-box {
+            background-color: rgba(246, 174, 45, 0.1);
+            border-left: 4px solid #F6AE2D;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        
+        .alert-title {
+            font-weight: bold;
+            color: #F6AE2D;
+            margin-bottom: 5px;
+        }
+        
+        .entity-item {
+            background-color: rgba(60, 137, 109, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .entity-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .entity-icon {
+            font-size: 1.3em;
+            color: var(--rights-color);
+            margin-right: 10px;
+        }
+        
+        .entity-title {
+            font-weight: bold;
+            color: var(--rights-color);
+        }
+        
+        .entity-body {
+            padding-left: 32px;
+        }
+        
+        .address-box {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 15px 0;
+        }
+        
+        .steps-list {
+            counter-reset: steps-counter;
+            list-style-type: none;
+            padding-left: 5px;
+        }
+        
+        .steps-list li {
+            counter-increment: steps-counter;
+            margin-bottom: 12px;
+            padding-left: 30px;
+            position: relative;
+        }
+        
+        .steps-list li:before {
+            content: counter(steps-counter);
+            background-color: var(--rights-color);
+            color: white;
+            font-weight: bold;
+            font-size: 0.8em;
+            border-radius: 50%;
+            width: 22px;
+            height: 22px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 0;
+            top: 2px;
+        }
+        
+        .flowchart {
+            width: 100%;
+            padding: 20px;
+            background-color: rgba(60, 137, 109, 0.05);
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .flowchart-title {
+            text-align: center;
+            color: var(--rights-color);
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .flow-step {
+            background-color: white;
+            border: 2px solid var(--rights-color);
+            border-radius: 8px;
+            padding: 10px;
+            margin: 10px auto;
+            text-align: center;
+            max-width: 80%;
+            position: relative;
+        }
+        
+        .flow-step:not(:last-child)::after {
+            content: "↓";
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: var(--rights-color);
+            font-size: 1.2em;
+        }
+        
+        @media (max-width: 768px) {
+            .card-header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .card-icon {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--rights-color);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 20px;
+            font-size: 1em;
+            font-weight: bold;
+            cursor: pointer;
+            margin-bottom: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #32765d;
+        }
+    </style>
+<style type="text/css" id="operaUserStyle"></style></head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-icon">⚖️</div>
+                <div class="card-title">Órgãos de Defesa e Suporte</div>
+            </div>
+            <div class="card-body">
+                <div class="card-section">
+                    <div class="section-title">Por que conhecer os órgãos de defesa?</div>
+                    <p>Saber a quem recorrer quando seus direitos não são respeitados é fundamental para garantir que a pessoa com Transtorno do Espectro Autista (TEA) tenha acesso a tudo que lhe é garantido por lei.</p>
+                    <p>Cada órgão tem sua competência específica e pode ajudar em diferentes situações. Conhecer o papel de cada um facilita o acesso aos direitos e agiliza a resolução de problemas.</p>
+                </div>
+                
+                <div class="card-section">
+                    <div class="section-title">Órgãos jurídicos e de defesa de direitos</div>
+                    
+                    <div class="entity-item">
+                        <div class="entity-header">
+                            <div class="entity-icon">👨‍⚖️</div>
+                            <div class="entity-title">Defensoria Pública</div>
+                        </div>
+                        <div class="entity-body">
+                            <p><strong>O que é:</strong> Órgão que presta assistência jurídica gratuita às pessoas que não têm condições de pagar por um advogado particular.</p>
+                            <p><strong>Quando procurar:</strong></p>
+                            <ul>
+                                <li>Quando uma escola se recusa a matricular a pessoa com TEA</li>
+                                <li>Quando o plano de saúde nega cobertura para terapias</li>
+                                <li>Quando o BPC/LOAS é negado pelo INSS</li>
+                                <li>Para garantir medicamentos negados pelo SUS</li>
+                                <li>Em caso de discriminação ou violação de direitos</li>
+                            </ul>
+                            <p><strong>Em São Paulo:</strong></p>
+                            <ul>
+                                <li><strong>Defensoria Pública do Estado (DPE-SP):</strong> Para questões estaduais e municipais</li>
+                                <li><strong>Defensoria Pública da União (DPU):</strong> Para questões federais (INSS, universidades federais)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="entity-item">
+                        <div class="entity-header">
+                            <div class="entity-icon">⚔️</div>
+                            <div class="entity-title">Ministério Público</div>
+                        </div>
+                        <div class="entity-body">
+                            <p><strong>O que é:</strong> Órgão que fiscaliza o cumprimento das leis e defende os interesses coletivos e individuais indisponíveis.</p>
+                            <p><strong>Quando procurar:</strong></p>
+                            <ul>
+                                <li>Quando há um problema que afeta várias pessoas com TEA (ex.: escolas sem acessibilidade)</li>
+                                <li>Quando serviços públicos não estão funcionando adequadamente (ex.: falta de terapias no SUS)</li>
+                                <li>Em casos de discriminação sistemática</li>
+                            </ul>
+                            <p><strong>Em São Paulo:</strong></p>
+                            <ul>
+                                <li><strong>MPSP:</strong> Grupo de Atuação Especial de Proteção à Pessoa com Deficiência</li>
+                                <li><strong>MPF:</strong> Para questões envolvendo órgãos federais</li>
+                                <li><strong>MPT:</strong> Para questões trabalhistas</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="entity-item">
+                        <div class="entity-header">
+                            <div class="entity-icon">🏛️</div>
+                            <div class="entity-title">Conselhos de Direitos</div>
+                        </div>
+                        <div class="entity-body">
+                            <p><strong>O que é:</strong> Órgãos de participação popular que fiscalizam e propõem políticas públicas para pessoas com deficiência.</p>
+                            <p><strong>Principais conselhos:</strong></p>
+                            <ul>
+                                <li><strong>Conselho Municipal da Pessoa com Deficiência (SP):</strong> Fiscaliza os serviços municipais</li>
+                                <li><strong>Conselho Estadual para Assuntos da Pessoa com Deficiência:</strong> Atua no âmbito estadual</li>
+                                <li><strong>CONADE (Conselho Nacional):</strong> Órgão superior de deliberação nacional</li>
+                            </ul>
+                            <p><strong>Quando procurar:</strong> Para denúncias sobre políticas públicas inadequadas, barreiras de acessibilidade ou para propor melhorias nos serviços.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-section">
+                    <div class="section-title">Órgãos executivos e de atendimento</div>
+                    
+                    <div class="entity-item">
+                        <div class="entity-header">
+                            <div class="entity-icon">👨‍👩‍👧‍👦</div>
+                            <div class="entity-title">Secretarias da Pessoa com Deficiência</div>
+                        </div>
+                        <div class="entity-body">
+                            <p><strong>O que são:</strong> Órgãos do poder executivo responsáveis por implementar políticas públicas para pessoas com deficiência.</p>
+                            <p><strong>Em São Paulo:</strong></p>
+                            <ul>
+                                <li><strong>Secretaria Municipal da Pessoa com Deficiência (SMPED):</strong> Emissão da CIPTEA, acessibilidade urbana, programas de inclusão</li>
+                                <li><strong>Secretaria de Estado dos Direitos da Pessoa com Deficiência (SEDPcD):</strong> Programas estaduais, centros de referência, empregabilidade</li>
+                            </ul>
+                            <p><strong>Quando procurar:</strong> Para obter documentos, acessar serviços especializados e programas de inclusão.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="entity-item">
+                        <div class="entity-header">
+                            <div class="entity-icon">📚</div>
+                            <div class="entity-title">Secretarias de Educação</div>
+                        </div>
+                        <div class="entity-body">
+                            <p><strong>O que são:</strong> Órgãos responsáveis pela gestão da educação pública.</p>
+                            <p><strong>Em São Paulo:</strong></p>
+                            <ul>
+                                <li><strong>Secretaria Municipal de Educação (SME):</strong> Para questões em escolas municipais (educação infantil e fundamental I)</li>
+                                <li><strong>Secretaria Estadual de Educação (SEDUC):</strong> Para questões em escolas estaduais (fundamental II e médio)</li>
+                                <li><strong>Núcleos de Educação Inclusiva:</strong> Setores específicos para atendimento à inclusão</li>
+                            </ul>
+                            <p><strong>Quando procurar:</strong> Para solicitar Atendimento Educacional Especializado (AEE), mediador escolar ou adaptações curriculares.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="entity-item">
+                        <div class="entity-header">
+                            <div class="entity-icon">🏥</div>
+                            <div class="entity-title">Secretarias de Saúde</div>
+                        </div>
+                        <div class="entity-body">
+                            <p><strong>O que são:</strong> Órgãos responsáveis pela gestão do Sistema Único de Saúde (SUS).</p>
+                            <p><strong>Em São Paulo:</strong></p>
+                            <ul>
+                                <li><strong>Secretaria Municipal de Saúde:</strong> UBS, CAPSi, CER municipais</li>
+                                <li><strong>Secretaria Estadual de Saúde:</strong> AMEs, hospitais estaduais, farmácias de alto custo</li>
+                                <li><strong>Coordenadorias de Saúde:</strong> Responsáveis pela gestão regional dos serviços</li>
+                            </ul>
+                            <p><strong>Quando procurar:</strong> Para solicitação de avaliação diagnóstica, terapias, medicamentos e tratamentos no SUS.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="entity-item">
+                        <div class="entity-header">
+                            <div class="entity-icon">💰</div>
+                            <div class="entity-title">INSS e Assistência Social</div>
+                        </div>
+                        <div class="entity-body">
+                            <p><strong>O que são:</strong> Órgãos responsáveis pelos benefícios assistenciais e previdenciários.</p>
+                            <ul>
+                                <li><strong>INSS (Instituto Nacional do Seguro Social):</strong> Responsável pelo BPC/LOAS e Auxílio-Inclusão</li>
+                                <li><strong>CRAS (Centro de Referência de Assistência Social):</strong> Porta de entrada para benefícios sociais, cadastro no CadÚnico</li>
+                                <li><strong>Secretaria de Assistência e Desenvolvimento Social:</strong> Gestão dos programas de assistência social municipais e estaduais</li>
+                            </ul>
+                            <p><strong>Quando procurar:</strong> Para solicitação de benefícios assistenciais, inclusão em programas sociais e apoio às famílias.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-section">
+                    <div class="section-title">Fluxo de resolução de problemas</div>
+                    <p>Quando um direito da pessoa com TEA não está sendo respeitado, siga esse fluxo para uma resolução mais eficiente:</p>
+                    
+                    <div class="flowchart">
+                        <div class="flowchart-title">Como agir quando um direito é negado</div>
+                        <div class="flow-step">
+                            <strong>1. Solicite formalmente ao órgão responsável</strong>
+                            <p>Faça um requerimento por escrito e guarde o protocolo</p>
+                        </div>
+                        <div class="flow-step">
+                            <strong>2. Em caso de negativa, solicite resposta por escrito</strong>
+                            <p>Isso servirá como prova para as próximas etapas</p>
+                        </div>
+                        <div class="flow-step">
+                            <strong>3. Recorra à ouvidoria do órgão</strong>
+                            <p>Faça uma reclamação formal com cópia dos documentos</p>
+                        </div>
+                        <div class="flow-step">
+                            <strong>4. Procure a Defensoria Pública</strong>
+                            <p>Leve todos os documentos e respostas obtidas</p>
+                        </div>
+                        <div class="flow-step">
+                            <strong>5. Acione o Ministério Público (se for caso coletivo)</strong>
+                            <p>Apresente provas da violação de direitos</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-section">
+                    <div class="section-title">Onde encontrar esses órgãos em São Paulo</div>
+                    
+                    <p><strong>Defensoria Pública do Estado (DPE-SP):</strong></p>
+                    <div class="address-box">
+                        <p><strong>Site:</strong> www.defensoria.sp.def.br</p>
+                        <p><strong>Telefone:</strong> (11) 3106-1778</p>
+                        <p><strong>CAP-PcD:</strong> Centro de Atendimento à Pessoa com Deficiência - Rua Teixeira da Silva, 217, Paraíso</p>
+                    </div>
+                    
+                    <p><strong>Ministério Público de São Paulo (MPSP):</strong></p>
+                    <div class="address-box">
+                        <p><strong>Site:</strong> www.mpsp.mp.br</p>
+                        <p><strong>Ouvidoria:</strong> 0800 127 127</p>
+                        <p><strong>CAO-Cível/Pessoa com Deficiência:</strong> Central de atendimento especializada</p>
+                    </div>
+                    
+                    <p><strong>Secretaria Municipal da Pessoa com Deficiência (SMPED):</strong></p>
+                    <div class="address-box">
+                        <p><strong>Endereço:</strong> Rua Líbero Badaró, 425 - Centro</p>
+                        <p><strong>Telefone:</strong> (11) 3913-4000</p>
+                    </div>
+                    
+                    <p><strong>Secretaria de Estado dos Direitos da Pessoa com Deficiência (SEDPcD):</strong></p>
+                    <div class="address-box">
+                        <p><strong>Email:</strong> sedepecontato@sp.gov.br</p>
+                        <p><strong>Telefone:</strong> (11) 5212-3700</p>
+                    </div>
+                </div>
+                
+                <div class="card-section">
+                    <div class="section-title">Dicas para obter atendimento eficaz</div>
+                    <ol class="steps-list">
+                        <li><strong>Organize a documentação</strong>
+                            <p>Tenha sempre à mão cópias do laudo médico, relatórios e documentos pessoais</p>
+                        </li>
+                        <li><strong>Registre todas as solicitações</strong>
+                            <p>Faça pedidos por escrito e guarde protocolos de atendimento</p>
+                        </li>
+                        <li><strong>Conheça seus direitos</strong>
+                            <p>Leve impressos os artigos de lei que fundamentam sua solicitação</p>
+                        </li>
+                        <li><strong>Peça negativas por escrito</strong>
+                            <p>Se um direito for negado, solicite uma explicação formal por escrito</p>
+                        </li>
+                        <li><strong>Recorra aos órgãos corretos</strong>
+                            <p>Identifique o órgão mais adequado para cada situação específica</p>
+                        </li>
+                    </ol>
+                    
+                    <div class="alert-box">
+                        <div class="alert-title">LEMBRE-SE!</div>
+                        <p>Os órgãos públicos têm prazos para responder às solicitações (geralmente 15 a 30 dias). Se não houver resposta, isso pode ser usado como argumento em uma eventual ação judicial. A persistência é fundamental para garantir o acesso aos direitos.</p>
+                    </div>
+                </div>
+                
+                <div class="card-section">
+                    <div class="section-title">Entidades de apoio não governamentais</div>
+                    <p>Além dos órgãos públicos, existem entidades e associações que podem ajudar:</p>
+                    <ul>
+                        <li><strong>OAB-SP:</strong> Comissão de Defesa dos Direitos da Pessoa com Deficiência</li>
+                        <li><strong>Associações de Pais e Amigos de Autistas:</strong> Oferecem orientação e suporte</li>
+                        <li><strong>Movimento Orgulho Autista:</strong> Atuação política em defesa de direitos</li>
+                        <li><strong>Grupos de Apoio:</strong> Troca de experiências e informações entre famílias</li>
+                        <li><strong>Universidades:</strong> Clínicas-escola e serviços de assistência jurídica</li>
+                    </ul>
+                    <p>Essas entidades muitas vezes conhecem os caminhos mais eficientes para acessar direitos e podem dar orientações práticas baseadas em experiências anteriores.</p>
+                </div>
+            </div>
+        </div>
+        <button class="back-button" onclick="history.back()">← Voltar</button>
+    </div>
+
+</body></html>

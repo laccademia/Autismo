@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<!-- saved from url=(0062)file:///C:/Users/lacca/Downloads/beneficios-assistenciais.html -->
+<html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benefícios Assistenciais - Direitos da Pessoa com TEA</title>
+    <style>
+        :root {
+            --benefit-color: #E84855;
+            --light-color: #F8F9FA;
+            --dark-color: #2F2F2F;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f0f4f8;
+            color: var(--dark-color);
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .card {
+            background-color: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            margin-bottom: 30px;
+        }
+        
+        .card-header {
+            background-color: var(--benefit-color);
+            padding: 20px;
+            color: white;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+        
+        .card-icon {
+            font-size: 2em;
+            margin-right: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.5em;
+        }
+        
+        .card-body {
+            padding: 25px;
+        }
+        
+        .card-section {
+            margin-bottom: 20px;
+        }
+        
+        .card-section:last-child {
+            margin-bottom: 0;
+        }
+        
+        .section-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+            color: #4A4E69;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+        }
+        
+        ul, ol {
+            padding-left: 25px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 5px;
+        }
+        
+        .alert-box {
+            background-color: rgba(246, 174, 45, 0.1);
+            border-left: 4px solid #F6AE2D;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        
+        .alert-title {
+            font-weight: bold;
+            color: #F6AE2D;
+            margin-bottom: 5px;
+        }
+        
+        .documents-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 15px 0;
+        }
+        
+        .document-item {
+            background-color: #f0f4f8;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            display: flex;
+            align-items: center;
+        }
+        
+        .document-icon {
+            margin-right: 5px;
+        }
+        
+        .benefit-item {
+            background-color: rgba(232, 72, 85, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .benefit-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .benefit-icon {
+            font-size: 1.3em;
+            color: var(--benefit-color);
+            margin-right: 10px;
+        }
+        
+        .benefit-title {
+            font-weight: bold;
+            color: var(--benefit-color);
+        }
+        
+        .benefit-body {
+            padding-left: 32px;
+        }
+        
+        .address-box {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 15px 0;
+        }
+        
+        .steps-list {
+            counter-reset: steps-counter;
+            list-style-type: none;
+            padding-left: 5px;
+        }
+        
+        .steps-list li {
+            counter-increment: steps-counter;
+            margin-bottom: 12px;
+            padding-left: 30px;
+            position: relative;
+        }
+        
+        .steps-list li:before {
+            content: counter(steps-counter);
+            background-color: var(--benefit-color);
+            color: white;
+            font-weight: bold;
+            font-size: 0.8em;
+            border-radius: 50%;
+            width: 22px;
+            height: 22px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 0;
+            top: 2px;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        
+        .comparison-table th, 
+        .comparison-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        
+        .comparison-table th {
+            background-color: rgba(232, 72, 85, 0.1);
+            color: var(--benefit-color);
+        }
+        
+        .comparison-table tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        
+        @media (max-width: 768px) {
+            .card-header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .card-icon {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+            
+            .documents-list {
+                flex-direction: column;
+            }
+            
+            .comparison-table {
+                font-size: 0.9em;
+            }
+        }
+
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--benefit-color);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 20px;
+            font-size: 1em;
+            font-weight: bold;
+            cursor: pointer;
+            margin-bottom: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #c53440;
+        }
+    </style>
+<style type="text/css" id="operaUserStyle"></style></head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-icon">💰</div>
+                <div class="card-title">Benefícios Assistenciais</div>
+            </div>
+            <div class="card-body">
+                <div class="card-section">
+                    <div class="section-title">O que são benefícios assistenciais?</div>
+                    <p>São auxílios financeiros e programas sociais previstos em lei para garantir condições básicas de vida para pessoas com deficiência, incluindo aquelas com Transtorno do Espectro Autista (TEA) e suas famílias.</p>
+                    <p>Esses benefícios não dependem de contribuição prévia à Previdência Social e são destinados à população em situação de vulnerabilidade social.</p>
+                </div>
+                
+                <div class="card-section">
+                    <div class="section-title">Principais benefícios para pessoas com TEA</div>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-header">
+                            <div class="benefit-icon">💵</div>
+                            <div class="benefit-title">BPC/LOAS - Benefício de Prestação Continuada</div>
+                        </div>
+                        <div class="benefit-body">
+                            <p><strong>O que é:</strong> Um salário mínimo mensal pago à pessoa com deficiência (incluindo TEA) de qualquer idade, que comprove não ter meios de se sustentar ou ser sustentada pela família.</p>
+                            <p><strong>Critérios principais:</strong></p>
+                            <ul>
+                                <li>Ter deficiência comprovada que cause impedimentos de longo prazo (mínimo 2 anos)</li>
+                                <li>Renda familiar per capita (por pessoa) inferior a 1/4 do salário mínimo</li>
+                                <li>Não receber outro benefício previdenciário ou do seguro-desemprego</li>
+                                <li>Estar inscrito no CadÚnico (Cadastro Único para Programas Sociais)</li>
+                            </ul>
+                            <p><strong>Base legal:</strong> LOAS (Lei nº 8.742/1993, artigo 20) e Decreto nº 6.214/2007</p>
+                        </div>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-header">
+                            <div class="benefit-icon">🔄</div>
+                            <div class="benefit-title">Auxílio-Inclusão</div>
+                        </div>
+                        <div class="benefit-body">
+                            <p><strong>O que é:</strong> Benefício no valor de meio salário mínimo pago a pessoas com deficiência que receberam o BPC e conseguiram entrar no mercado de trabalho com carteira assinada.</p>
+                            <p><strong>Critérios principais:</strong></p>
+                            <ul>
+                                <li>Ter recebido o BPC antes de entrar no mercado de trabalho</li>
+                                <li>Estar empregado formalmente (carteira assinada)</li>
+                                <li>Renda mensal do trabalho de até 2 salários mínimos</li>
+                            </ul>
+                            <p><strong>Base legal:</strong> Lei nº 13.146/2015 (LBI, artigo 94) e Lei nº 14.176/2021</p>
+                        </div>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-header">
+                            <div class="benefit-icon">👨‍👩‍👧‍👦</div>
+                            <div class="benefit-title">Outros Benefícios e Programas Sociais</div>
+                        </div>
+                        <div class="benefit-body">
+                            <ul>
+                                <li><strong>Programa Bolsa Família:</strong> Famílias com pessoa com TEA que estejam em situação de pobreza ou extrema pobreza podem acessar</li>
+                                <li><strong>Tarifa Social de Energia Elétrica:</strong> Desconto na conta de luz para famílias de baixa renda com pessoa com deficiência</li>
+                                <li><strong>Programa Minha Casa, Minha Vida:</strong> Prioridade na seleção e reserva de 3% das unidades habitacionais</li>
+                            </ul>
+                            <p>Estes benefícios têm requisitos específicos de renda familiar e outras condições que devem ser verificadas em cada caso.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-section">
+                    <div class="section-title">Características do BPC</div>
+                    <table class="comparison-table">
+                        <tbody><tr>
+                            <th>Característica</th>
+                            <th>BPC/LOAS</th>
+                        </tr>
+                        <tr>
+                            <td>Valor</td>
+                            <td>1 salário mínimo mensal</td>
+                        </tr>
+                        <tr>
+                            <td>Necessita contribuição prévia?</td>
+                            <td>Não</td>
+                        </tr>
+                        <tr>
+                            <td>Paga 13º salário?</td>
+                            <td>Não</td>
+                        </tr>
+                        <tr>
+                            <td>Gera pensão por morte?</td>
+                            <td>Não</td>
+                        </tr>
+                        <tr>
+                            <td>É vitalício?</td>
+                            <td>Não, passa por revisão a cada 2 anos</td>
+                        </tr>
+                        <tr>
+                            <td>Pode ser acumulado com outros benefícios?</td>
+                            <td>Não pode acumular com aposentadoria, seguro-desemprego, etc.</td>
+                        </tr>
+                    </tbody></table>
+                    
+                    <div class="alert-box">
+                        <div class="alert-title">IMPORTANTE!</div>
+                        <p>O BPC não é uma aposentadoria ou pensão. É um benefício assistencial que pode ser suspenso caso a renda familiar melhore ou a pessoa deixe de cumprir os requisitos. Contudo, o Auxílio-Inclusão foi criado justamente para que a pessoa com deficiência não perca todo o apoio financeiro ao conseguir um emprego.</p>
+                    </div>
+                </div>
+                
+                <div class="card-section">
+                    <div class="section-title">Como solicitar o BPC/LOAS</div>
+                    <ol class="steps-list">
+                        <li><strong>Cadastre-se no CadÚnico</strong>
+                            <p>Vá ao CRAS (Centro de Referência de Assistência Social) mais próximo de sua casa com documentos de todos os membros da família</p>
+                        </li>
+                        <li><strong>Agende atendimento no INSS</strong>
+                            <p>Ligue para o telefone 135 ou acesse o site/aplicativo "Meu INSS"</p>
+                        </li>
+                        <li><strong>Compareça ao INSS na data agendada</strong>
+                            <p>Leve todos os documentos necessários (listados abaixo)</p>
+                        </li>
+                        <li><strong>Aguarde a avaliação médica e social</strong>
+                            <p>O INSS agendará duas avaliações: uma médica (para comprovar a deficiência) e uma social (para avaliar o grau de impedimento na participação social)</p>
+                        </li>
+                        <li><strong>Acompanhe o resultado</strong>
+                            <p>O resultado pode ser consultado pelo Meu INSS, pelo telefone 135 ou pessoalmente em uma agência</p>
+                        </li>
+                    </ol>
+                </div>
+                
+                <div class="card-section">
+                    <div class="section-title">Documentos necessários para o BPC</div>
+                    <div class="documents-list">
+                        <div class="document-item"><span class="document-icon">📄</span> Documentos pessoais de todos os membros da família (RG, CPF)</div>
+                        <div class="document-item"><span class="document-icon">📋</span> Certidão de nascimento (se menor)</div>
+                        <div class="document-item"><span class="document-icon">📝</span> Comprovante de residência</div>
+                        <div class="document-item"><span class="document-icon">📑</span> Laudo médico detalhado com CID</div>
+                        <div class="document-item"><span class="document-icon">💵</span> Comprovantes de renda de todos da família</div>
+                        <div class="document-item"><span class="document-icon">📃</span> Comprovante de inscrição no CadÚnico</div>
+                        <div class="document-item"><span class="document-icon">📲</span> Número do NIS (Número de Identificação Social)</div>
+                    </div>
+                </div>
+                
+                <div class="card-section">
+                    <div class="section-title">Como solicitar o Auxílio-Inclusão</div>
+                    <ol class="steps-list">
+                        <li><strong>Tenha sido beneficiário do BPC</strong>
+                            <p>É preciso ter recebido o BPC antes de conseguir o emprego</p>
+                        </li>
+                        <li><strong>Consiga um emprego formal</strong>
+                            <p>Inicie atividade remunerada com carteira assinada</p>
+                        </li>
+                        <li><strong>Solicite o Auxílio-Inclusão</strong>
+                            <p>Faça o pedido pelo site/aplicativo "Meu INSS" ou pelo telefone 135</p>
+                        </li>
+                        <li><strong>Apresente documentação</strong>
+                            <p>Comprove o vínculo empregatório e a remuneração (até 2 salários mínimos)</p>
+                        </li>
+                    </ol>
+                    <p>Com o Auxílio-Inclusão, a pessoa com TEA não perde totalmente o apoio financeiro ao entrar no mercado de trabalho, o que incentiva a inclusão profissional.</p>
+                </div>
+                
+                <div class="card-section">
+                    <div class="section-title">Onde acessar esses benefícios em São Paulo</div>
+                    <p><strong>CRAS - Centro de Referência de Assistência Social:</strong></p>
+                    <ul>
+                        <li>Responsável pelo CadÚnico e porta de entrada para benefícios sociais</li>
+                        <li>Cada bairro/região tem um CRAS de referência</li>
+                    </ul>
+                    
+                    <div class="address-box">
+                        <p><strong>Para localizar o CRAS mais próximo:</strong></p>
+                        <p>Ligue para 156 (Capital) ou acesse o site da Prefeitura de São Paulo - Secretaria de Assistência Social</p>
+                    </div>
+                    
+                    <p><strong>INSS - Instituto Nacional do Seguro Social:</strong></p>
+                    <ul>
+                        <li>Responsável pela concessão do BPC e do Auxílio-Inclusão</li>
+                        <li>Agências em diversos bairros da cidade</li>
+                    </ul>
+                    
+                    <div class="address-box">
+                        <p><strong>Para agendar atendimento no INSS:</strong></p>
+                        <p>Telefone: 135 (ligação gratuita)</p>
+                        <p>Site/Aplicativo: Meu INSS</p>
+                    </div>
+                </div>
+                
+                <div class="card-section">
+                    <div class="section-title">Dicas importantes</div>
+                    <ul>
+                        <li>Mantenha o CadÚnico sempre atualizado (a cada 2 anos no máximo)</li>
+                        <li>Guarde todos os protocolos de atendimento</li>
+                        <li>Tenha sempre cópias do laudo médico e de todos os documentos</li>
+                        <li>Se o benefício for negado, você pode entrar com recurso no próprio INSS</li>
+                        <li>Em caso de dificuldade, procure orientação na Defensoria Pública</li>
+                        <li>Se a renda familiar aumentar, comunique ao INSS para evitar problemas futuros</li>
+                    </ul>
+                    
+                    <div class="alert-box">
+                        <div class="alert-title">LEMBRE-SE!</div>
+                        <p>O BPC não é automático para todas as pessoas com TEA. É preciso comprovar que a deficiência causa impedimentos à vida independente e que a família não tem condições de prover o sustento. A avaliação é feita caso a caso, considerando fatores sociais e funcionais, não apenas o diagnóstico.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="back-button" onclick="history.back()">← Voltar</button>
+    </div>
+
+</body></html>

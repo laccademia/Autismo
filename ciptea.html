@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<!-- saved from url=(0064)file:///C:/Users/lacca/Downloads/carteira-identificacao-tea.html -->
+<html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carteira de Identificação da Pessoa com TEA (CIPTEA)</title>
+    <style>
+        :root {
+            --id-color: #56B4A0;
+            --light-color: #F8F9FA;
+            --dark-color: #2F2F2F;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f0f4f8;
+            color: var(--dark-color);
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .card {
+            background-color: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            margin-bottom: 30px;
+        }
+        
+        .card-header {
+            background-color: var(--id-color);
+            padding: 20px;
+            color: white;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+        
+        .card-icon {
+            font-size: 2em;
+            margin-right: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.5em;
+        }
+        
+        .card-body {
+            padding: 25px;
+        }
+        
+        .card-section {
+            margin-bottom: 20px;
+        }
+        
+        .card-section:last-child {
+            margin-bottom: 0;
+        }
+        
+        .section-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+            color: #4A4E69;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+        }
+        
+        ul, ol {
+            padding-left: 25px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 5px;
+        }
+        
+        .alert-box {
+            background-color: rgba(246, 174, 45, 0.1);
+            border-left: 4px solid #F6AE2D;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        
+        .alert-title {
+            font-weight: bold;
+            color: #F6AE2D;
+            margin-bottom: 5px;
+        }
+        
+        .documents-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 15px 0;
+        }
+        
+        .document-item {
+            background-color: #f0f4f8;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            display: flex;
+            align-items: center;
+        }
+        
+        .document-icon {
+            margin-right: 5px;
+        }
+        
+        .card-example {
+            background-color: rgba(86, 180, 160, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 15px 0;
+            text-align: center;
+        }
+        
+        .card-image {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border: 2px solid var(--id-color);
+            border-radius: 8px;
+            margin: 10px auto;
+            padding: 10px;
+            background-color: white;
+        }
+        
+        .benefits-list {
+            background-color: rgba(86, 180, 160, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 15px 0;
+        }
+        
+        .benefits-title {
+            font-weight: bold;
+            color: var(--id-color);
+            margin-bottom: 10px;
+        }
+        
+        .benefits-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+        
+        .benefits-icon {
+            color: var(--id-color);
+            margin-right: 10px;
+        }
+        
+        .address-box {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 15px 0;
+        }
+        
+        .steps-list {
+            counter-reset: steps-counter;
+            list-style-type: none;
+            padding-left: 5px;
+        }
+        
+        .steps-list li {
+            counter-increment: steps-counter;
+            margin-bottom: 12px;
+            padding-left: 30px;
+            position: relative;
+        }
+        
+        .steps-list li:before {
+            content: counter(steps-counter);
+            background-color: var(--id-color);
+            color: white;
+            font-weight: bold;
+            font-size: 0.8em;
+            border-radius: 50%;
+            width: 22px;
+            height: 22px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 0;
+            top: 2px;
+        }
+        
+        @media (max-width: 768px) {
+            .card-header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .card-icon {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+            
+            .documents-list {
+                flex-direction: column;
+            }
+        }
+
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--id-color);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 20px;
+            font-size: 1em;
+            font-weight: bold;
+            cursor: pointer;
+            margin-bottom: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #4a9b88;
+        }
+    </style>
+<style type="text/css" id="operaUserStyle"></style></head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-icon">📇</div>
+                <div class="card-title">Carteira de Identificação da Pessoa com TEA (CIPTEA)</div>
+            </div>
+            <div class="card-body">
+                <div class="card-section">
+                    <div class="section-title">O que é a CIPTEA?</div>
+                    <p>A Carteira de Identificação da Pessoa com Transtorno do Espectro Autista (CIPTEA) é um documento oficial que identifica a pessoa com TEA e assegura atendimento prioritário em serviços públicos e privados, especialmente nas áreas de saúde, educação e assistência social.</p>
+                    
+                    <div class="card-example">
+                        <p><strong>Modelo da CIPTEA</strong></p>
+                        <div class="card-image">
+                            <!--Representação visual da carteira-->
+                            <div style="border: 1px dashed #56B4A0; height: 150px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                                <div style="background: #56B4A0; color: white; width: 100%; text-align: center; padding: 5px;">CIPTEA</div>
+                                <div style="display: flex; padding: 10px;">
+                                    <div style="border: 1px solid #ccc; width: 70px; height: 90px; margin-right: 10px; display: flex; justify-content: center; align-items: center;">Foto</div>
+                                    <div style="text-align: left; font-size: 0.8em;">
+                                        <p>Nome: _______________</p>
+                                        <p>Data de Nasc.: __/__/____</p>
+                                        <p>CPF: _______________</p>
+                                        <p>Responsável: ________</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-section">
+                    <div class="section-title">Qual a base legal da CIPTEA?</div>
+                    <p>A CIPTEA foi criada pela <strong>Lei nº 13.977/2020</strong>, conhecida como Lei Romeo Mion, que alterou a Lei Berenice Piana. Em 2024, o <strong>Decreto Federal nº 12.115/2024</strong> criou o Sistema Nacional de Cadastro da Pessoa com TEA (SisTEA), que uniformiza o registro e a expedição da CIPTEA em todo o Brasil.</p>
+                </div>
+                
+                <div class="card-section">
+                    <div class="section-title">Quais os benefícios da CIPTEA?</div>
+                    <div class="benefits-list">
+                        <div class="benefits-title">Com a CIPTEA você tem garantido:</div>
+                        <div class="benefits-item">
+                            <div class="benefits-icon">✓</div>
+                            <div><strong>Atendimento prioritário</strong> em serviços públicos e privados</div>
+                        </div>
+                        <div class="benefits-item">
+                            <div class="benefits-icon">✓</div>
+                            <div><strong>Comprovação oficial</strong> da condição de pessoa com TEA</div>
+                        </div>
+                        <div class="benefits-item">
+                            <div class="benefits-icon">✓</div>
+                            <div><strong>Acesso facilitado</strong> a direitos garantidos por lei</div>
+                        </div>
+                        <div class="benefits-item">
+                            <div class="benefits-icon">✓</div>
+                            <div><strong>Prioridade</strong> em filas, bancos, supermercados, repartições públicas</div>
+                        </div>
+                        <div class="benefits-item">
+                            <div class="benefits-icon">✓</div>
+                            <div><strong>Validade</strong> de 5 anos, renovável</div>
+                        </div>
+                    </div>
+                    
+                    <div class="alert-box">
+                        <div class="alert-title">IMPORTANTE!</div>
+                        <p>A CIPTEA <strong>facilita</strong> o acesso aos direitos, mas não é obrigatória para ter esses direitos. Se ainda não tiver a CIPTEA, a pessoa com TEA pode apresentar laudo médico ou outros documentos que comprovem a condição.</p>
+                    </div>
+                </div>
+                
+                <div class="card-section">
+                    <div class="section-title">Como obter a CIPTEA?</div>
+                    <ol class="steps-list">
+                        <li><strong>Reúna a documentação necessária</strong> (listada abaixo)</li>
+                        <li><strong>Procure o órgão responsável</strong> pela emissão em sua cidade ou estado</li>
+                        <li><strong>Preencha o formulário</strong> de solicitação</li>
+                        <li><strong>Apresente os documentos</strong> e faça o cadastro</li>
+                        <li><strong>Aguarde a emissão</strong> da carteira (o prazo varia conforme o local)</li>
+                    </ol>
+                </div>
+                
+                <div class="card-section">
+                    <div class="section-title">Documentos necessários</div>
+                    <div class="documents-list">
+                        <div class="document-item"><span class="document-icon">📄</span> Laudo médico com CID (F84.x)</div>
+                        <div class="document-item"><span class="document-icon">📋</span> RG/CPF ou certidão de nascimento</div>
+                        <div class="document-item"><span class="document-icon">👤</span> RG do responsável (se menor)</div>
+                        <div class="document-item"><span class="document-icon">📨</span> Comprovante de residência</div>
+                        <div class="document-item"><span class="document-icon">📸</span> Foto 3x4 recente</div>
+                        <div class="document-item"><span class="document-icon">📝</span> Formulário de solicitação preenchido</div>
+                    </div>
+                </div>
+                
+                <div class="card-section">
+                    <div class="section-title">Onde obter a CIPTEA em São Paulo</div>
+                    <p><strong>Capital:</strong> Secretaria Municipal da Pessoa com Deficiência (SMPED)</p>
+                    <div class="address-box">
+                        <p><strong>Endereço:</strong> Rua Líbero Badaró, 425 - Centro</p>
+                        <p><strong>Telefone:</strong> (11) 3913-4000</p>
+                    </div>
+                    
+                    <p><strong>Estado:</strong> Secretaria de Estado dos Direitos da Pessoa com Deficiência</p>
+                    <div class="address-box">
+                        <p><strong>Email:</strong> sedepecontato@sp.gov.br</p>
+                        <p><strong>Telefone:</strong> (11) 5212-3700</p>
+                    </div>
+                    
+                    <p><strong>Outros municípios:</strong> Informe-se na prefeitura local, geralmente nas secretarias de:
+                    </p><ul>
+                        <li>Assistência Social</li>
+                        <li>Pessoa com Deficiência</li>
+                        <li>Saúde</li>
+                        <li>Direitos Humanos</li>
+                    </ul>
+                </div>
+                
+                <div class="card-section">
+                    <div class="section-title">Dúvidas Frequentes</div>
+                    <p><strong>A CIPTEA é gratuita?</strong><br>
+                    Sim, a emissão da CIPTEA é totalmente gratuita.</p>
+                    
+                    <p><strong>Preciso renovar a CIPTEA?</strong><br>
+                    Sim, a validade é de 5 anos. Para renovação, siga o mesmo procedimento da primeira solicitação.</p>
+                    
+                    <p><strong>O que fazer em caso de perda?</strong><br>
+                    Solicite uma segunda via no mesmo local onde foi emitida a carteira original.</p>
+                    
+                    <p><strong>A CIPTEA nacional substitui carteiras municipais ou estaduais anteriores?</strong><br>
+                    O SisTEA está em implementação para unificar todas as carteiras. Durante a transição, as carteiras locais continuam válidas até sua data de vencimento.</p>
+                </div>
+            </div>
+        </div>
+
+        <button class="back-button" onclick="history.back()">← Voltar</button>
+    </div>
+
+</body></html>

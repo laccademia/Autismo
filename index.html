@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)file:///C:/Users/lacca/Downloads/guia-direitos-tea-pagina-inicial.html -->
+<html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Direitos da Pessoa com TEA - Guia Completo</title>
+    <style>
+        :root {
+            --primary-color: #6A4C93;
+            --secondary-color: #4C95BE;
+            --accent-color: #56B4A0;
+            --highlight-color: #F6AE2D;
+            --alert-color: #E84855;
+            --education-color: #6A4C93;
+            --health-color: #4C95BE;
+            --id-color: #56B4A0;
+            --transport-color: #F6AE2D;
+            --benefit-color: #E84855;
+            --parent-color: #4A4E69;
+            --rights-color: #3C896D;
+            --other-color: #936B78;
+            --tips-color: #FF9E00;
+            
+            --light-color: #F8F9FA;
+            --dark-color: #2F2F2F;
+            --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            --card-radius: 15px;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f0f4f8;
+            color: var(--dark-color);
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 40px 30px;
+            border-radius: var(--card-radius);
+            margin-bottom: 30px;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+        
+        .header h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        
+        .header p {
+            font-size: 1.3em;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .intro {
+            background-color: white;
+            padding: 30px;
+            border-radius: var(--card-radius);
+            margin-bottom: 30px;
+            box-shadow: var(--shadow);
+        }
+        
+        .intro h2 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+        
+        .intro p {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+        
+        .how-to-use {
+            background-color: rgba(246, 174, 45, 0.1);
+            border-left: 4px solid var(--highlight-color);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .how-to-use h3 {
+            color: var(--highlight-color);
+            margin-bottom: 10px;
+        }
+        
+        .how-to-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .step-card {
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .step-number {
+            background-color: var(--primary-color);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+        
+        .card {
+            background-color: white;
+            border-radius: var(--card-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .card-header {
+            padding: 20px;
+            color: white;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+        
+        .card-icon {
+            font-size: 2.5em;
+            margin-right: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.5em;
+        }
+        
+        .card-body {
+            padding: 20px;
+        }
+        
+        .card-text {
+            margin-bottom: 20px;
+            min-height: 80px;
+        }
+        
+        .card-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 30px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        
+        .card-btn:hover {
+            transform: scale(1.05);
+        }
+        
+        /* Card specific styles */
+        .education-card .card-header {
+            background-color: var(--education-color);
+        }
+        
+        .education-btn {
+            background-color: var(--education-color);
+        }
+        
+        .education-btn:hover {
+            background-color: #5a3d7e;
+        }
+        
+        .health-card .card-header {
+            background-color: var(--health-color);
+        }
+        
+        .health-btn {
+            background-color: var(--health-color);
+        }
+        
+        .health-btn:hover {
+            background-color: #3f80a3;
+        }
+        
+        .id-card .card-header {
+            background-color: var(--id-color);
+        }
+        
+        .id-btn {
+            background-color: var(--id-color);
+        }
+        
+        .id-btn:hover {
+            background-color: #479988;
+        }
+        
+        .transport-card .card-header {
+            background-color: var(--transport-color);
+        }
+        
+        .transport-btn {
+            background-color: var(--transport-color);
+        }
+        
+        .transport-btn:hover {
+            background-color: #dd9a27;
+        }
+        
+        .benefit-card .card-header {
+            background-color: var(--benefit-color);
+        }
+        
+        .benefit-btn {
+            background-color: var(--benefit-color);
+        }
+        
+        .benefit-btn:hover {
+            background-color: #d13c49;
+        }
+        
+        .parent-card .card-header {
+            background-color: var(--parent-color);
+        }
+        
+        .parent-btn {
+            background-color: var(--parent-color);
+        }
+        
+        .parent-btn:hover {
+            background-color: #3d4057;
+        }
+        
+        .rights-card .card-header {
+            background-color: var(--rights-color);
+        }
+        
+        .rights-btn {
+            background-color: var(--rights-color);
+        }
+        
+        .rights-btn:hover {
+            background-color: #30775d;
+        }
+        
+        .other-card .card-header {
+            background-color: var(--other-color);
+        }
+        
+        .other-btn {
+            background-color: var(--other-color);
+        }
+        
+        .other-btn:hover {
+            background-color: #7d5b65;
+        }
+        
+        /* Estilos para o novo cartão de Dicas Práticas */
+        .tips-card .card-header {
+            background-color: var(--tips-color);
+        }
+        
+        .tips-btn {
+            background-color: var(--tips-color);
+        }
+        
+        .tips-btn:hover {
+            background-color: #e78f00;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 30px 0;
+            color: var(--dark-color);
+            opacity: 0.7;
+            font-size: 0.9em;
+            margin-top: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.2em;
+            }
+            
+            .header p {
+                font-size: 1.1em;
+            }
+            
+            .cards-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .how-to-steps {
+                grid-template-columns: 1fr;
+            }
+            
+            .card-header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .card-icon {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+<style type="text/css" id="operaUserStyle"></style></head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>GUIA DE DIREITOS DA PESSOA COM TEA</h1>
+            <p>Um recurso completo para conhecer e acessar os direitos garantidos às pessoas com Transtorno do Espectro Autista no Brasil</p>
+        </header>
+        
+        <section class="intro">
+            <h2>O que é o Transtorno do Espectro Autista (TEA)?</h2>
+            <p>O Transtorno do Espectro Autista (TEA) é uma condição de neurodesenvolvimento que afeta a comunicação, interação social e comportamento da pessoa. Caracterizado por diferentes níveis de manifestação e necessidades de suporte, o TEA faz parte da neurodiversidade humana.</p>
+            
+            <p>No Brasil, o TEA é <strong>legalmente reconhecido como uma deficiência</strong>, garantindo às pessoas autistas todos os direitos assegurados às pessoas com deficiência por meio da Lei Berenice Piana (Lei nº 12.764/2012) e da Lei Brasileira de Inclusão (Lei nº 13.146/2015).</p>
+            
+            <p>Conhecer seus direitos é o primeiro passo para garantir acesso à educação, saúde, assistência social, transporte, trabalho e demais aspectos fundamentais para uma vida digna e inclusiva.</p>
+            
+            <div class="how-to-use">
+                <h3>Como usar este guia</h3>
+                <p>Este guia foi desenvolvido para ajudar pessoas com TEA e seus familiares a compreenderem e acessarem seus direitos. Está organizado em áreas temáticas para facilitar a navegação e consulta.</p>
+                
+                <div class="how-to-steps">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <div>
+                            <strong>Escolha o tema</strong> que deseja conhecer entre as opções disponíveis nos cartões coloridos abaixo.
+                        </div>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <div>
+                            <strong>Clique no botão "Acessar"</strong> para abrir a página detalhada com informações completas sobre aquele direito específico.
+                        </div>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <div>
+                            <strong>Anote as informações importantes</strong> e os contatos dos órgãos responsáveis pela garantia desses direitos.
+                        </div>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">4</div>
+                        <div>
+                            <strong>Compartilhe este guia</strong> com outras pessoas que possam se beneficiar dessas informações.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <div class="cards-container">
+            <!-- Educação Card -->
+            <div class="card education-card">
+                <div class="card-header">
+                    <div class="card-icon">🏫</div>
+                    <div class="card-title">Educação Inclusiva</div>
+                </div>
+                <div class="card-body">
+                    <div class="card-text">
+                        <p>Conheça os direitos à matrícula em escolas regulares, proibição de recusa, adaptações curriculares, mediador escolar e outros recursos inclusivos garantidos por lei.</p>
+                    </div>
+                    <a href="educacao.html" class="card-btn education-btn">Acessar</a>
+                </div>
+            </div>
+            
+            <!-- Saúde Card -->
+            <div class="card health-card">
+                <div class="card-header">
+                    <div class="card-icon">🏥</div>
+                    <div class="card-title">Saúde e Terapias</div>
+                </div>
+                <div class="card-body">
+                    <div class="card-text">
+                        <p>Saiba como acessar diagnóstico precoce, atendimento multiprofissional, medicamentos gratuitos e terapias pelo SUS e planos de saúde.</p>
+                    </div>
+                    <a href="saude.html" class="card-btn health-btn">Acessar</a>
+                </div>
+            </div>
+            
+            <!-- CIPTEA Card -->
+            <div class="card id-card">
+                <div class="card-header">
+                    <div class="card-icon">📇</div>
+                    <div class="card-title">Carteira de Identificação (CIPTEA)</div>
+                </div>
+                <div class="card-body">
+                    <div class="card-text">
+                        <p>Descubra como obter a Carteira de Identificação da Pessoa com TEA, documento oficial que facilita o acesso a direitos e atendimento prioritário.</p>
+                    </div>
+                    <a href="ciptea.html" class="card-btn id-btn">Acessar</a>
+                </div>
+            </div>
+            
+            <!-- Transporte Card -->
+            <div class="card transport-card">
+                <div class="card-header">
+                    <div class="card-icon">🚌</div>
+                    <div class="card-title">Transporte e Mobilidade</div>
+                </div>
+                <div class="card-body">
+                    <div class="card-text">
+                        <p>Informe-se sobre gratuidade no transporte público, passe livre interestadual e isenções de impostos na compra de veículos.</p>
+                    </div>
+                    <a href="transporte.html" class="card-btn transport-btn">Acessar</a>
+                </div>
+            </div>
+            
+            <!-- Benefícios Card -->
+            <div class="card benefit-card">
+                <div class="card-header">
+                    <div class="card-icon">💰</div>
+                    <div class="card-title">Benefícios Assistenciais</div>
+                </div>
+                <div class="card-body">
+                    <div class="card-text">
+                        <p>Conheça o BPC/LOAS (Benefício de Prestação Continuada), o Auxílio-Inclusão e outros benefícios financeiros disponíveis para pessoas com TEA.</p>
+                    </div>
+                    <a href="beneficios.html" class="card-btn benefit-btn">Acessar</a>
+                </div>
+            </div>
+            
+            <!-- Direitos dos Pais Card -->
+            <div class="card parent-card">
+                <div class="card-header">
+                    <div class="card-icon">👨‍👩‍👧‍👦</div>
+                    <div class="card-title">Direitos dos Pais e Cuidadores</div>
+                </div>
+                <div class="card-body">
+                    <div class="card-text">
+                        <p>Descubra os direitos garantidos a pais e cuidadores, como horário especial de trabalho, proteção contra discriminação e apoio psicossocial.</p>
+                    </div>
+                    <a href="pais.html" class="card-btn parent-btn">Acessar</a>
+                </div>
+            </div>
+            
+            <!-- Órgãos de Defesa Card -->
+            <div class="card rights-card">
+                <div class="card-header">
+                    <div class="card-icon">⚖️</div>
+                    <div class="card-title">Órgãos de Defesa e Suporte</div>
+                </div>
+                <div class="card-body">
+                    <div class="card-text">
+                        <p>Saiba onde buscar ajuda quando seus direitos não são respeitados, incluindo Defensoria Pública, Ministério Público e conselhos especializados.</p>
+                    </div>
+                    <a href="orgaos.html" class="card-btn rights-btn">Acessar</a>
+                </div>
+            </div>
+            
+            <!-- Outros Direitos Card -->
+            <div class="card other-card">
+                <div class="card-header">
+                    <div class="card-icon">🏠</div>
+                    <div class="card-title">Outros Direitos Importantes</div>
+                </div>
+                <div class="card-body">
+                    <div class="card-text">
+                        <p>Conheça direitos como prioridade em programas habitacionais, reserva de vagas em concursos públicos, isenção de IPTU e outras garantias legais.</p>
+                    </div>
+                    <a href="outros-direitos.html" class="card-btn other-btn">Acessar</a>
+                </div>
+            </div>
+            
+            <!-- Dicas Práticas Card -->
+            <div class="card tips-card">
+                <div class="card-header">
+                    <div class="card-icon">💡</div>
+                    <div class="card-title">Dicas Práticas e Orientações</div>
+                </div>
+                <div class="card-body">
+                    <div class="card-text">
+                        <p>Orientações práticas para famílias: organização de documentos, estratégias sensoriais, comunicação e autocuidado.</p>
+                    </div>
+                    <a href="dicas.html" class="card-btn tips-btn">Acessar</a>
+                </div>
+            </div>
+        </div>
+        
+        <footer class="footer">
+            <p>Este guia foi elaborado com base na legislação vigente até 2025. As informações podem sofrer alterações conforme novas leis e normas sejam implementadas.</p>
+            <p>© 2025 - Guia de Direitos da Pessoa com TEA</p>
+        </footer>
+    </div>
+
+</body></html>

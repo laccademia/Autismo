@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)file:///C:/Users/lacca/Downloads/transporte-mobilidade.html -->
+<html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transporte e Mobilidade - Direitos da Pessoa com TEA</title>
+    <style>
+        :root {
+            --transport-color: #F6AE2D;
+            --light-color: #F8F9FA;
+            --dark-color: #2F2F2F;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f0f4f8;
+            color: var(--dark-color);
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .card {
+            background-color: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            margin-bottom: 30px;
+        }
+        
+        .card-header {
+            background-color: var(--transport-color);
+            padding: 20px;
+            color: white;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+        
+        .card-icon {
+            font-size: 2em;
+            margin-right: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.5em;
+        }
+        
+        .card-body {
+            padding: 25px;
+        }
+        
+        .card-section {
+            margin-bottom: 20px;
+        }
+        
+        .card-section:last-child {
+            margin-bottom: 0;
+        }
+        
+        .section-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+            color: #4A4E69;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+        }
+        
+        ul, ol {
+            padding-left: 25px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 5px;
+        }
+        
+        .alert-box {
+            background-color: rgba(246, 174, 45, 0.1);
+            border-left: 4px solid #F6AE2D;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        
+        .alert-title {
+            font-weight: bold;
+            color: #F6AE2D;
+            margin-bottom: 5px;
+        }
+        
+        .documents-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 15px 0;
+        }
+        
+        .document-item {
+            background-color: #f0f4f8;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            display: flex;
+            align-items: center;
+        }
+        
+        .document-icon {
+            margin-right: 5px;
+        }
+        
+        .benefit-item {
+            background-color: rgba(246, 174, 45, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .benefit-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .benefit-icon {
+            font-size: 1.3em;
+            color: var(--transport-color);
+            margin-right: 10px;
+        }
+        
+        .benefit-title {
+            font-weight: bold;
+            color: var(--transport-color);
+        }
+        
+        .benefit-body {
+            padding-left: 32px;
+        }
+        
+        .address-box {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 15px 0;
+        }
+        
+        .steps-list {
+            counter-reset: steps-counter;
+            list-style-type: none;
+            padding-left: 5px;
+        }
+        
+        .steps-list li {
+            counter-increment: steps-counter;
+            margin-bottom: 12px;
+            padding-left: 30px;
+            position: relative;
+        }
+        
+        .steps-list li:before {
+            content: counter(steps-counter);
+            background-color: var(--transport-color);
+            color: white;
+            font-weight: bold;
+            font-size: 0.8em;
+            border-radius: 50%;
+            width: 22px;
+            height: 22px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 0;
+            top: 2px;
+        }
+        
+        @media (max-width: 768px) {
+            .card-header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .card-icon {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+            
+            .documents-list {
+                flex-direction: column;
+            }
+        }
+
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--transport-color);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 20px;
+            font-size: 1em;
+            font-weight: bold;
+            cursor: pointer;
+            margin-bottom: 20px;
+            transition: background-color 0.3s ease;
+        }
+        .back-button:hover {
+            background-color: #d49521;
+        }
+    </style>
+<style type="text/css" id="operaUserStyle"></style></head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-icon">🚌</div>
+                <div class="card-title">Transporte e Mobilidade</div>
+            </div>
+            <div class="card-body">
+                <div class="card-section">
+                    <div class="section-title">O que é garantido por lei?</div>
+                    <p>A pessoa com Transtorno do Espectro Autista (TEA) tem diversos direitos relacionados ao transporte e à mobilidade, facilitando seu deslocamento para tratamentos, escola e atividades sociais.</p>
+                    <ul>
+                        <li><strong>Gratuidade</strong> nos transportes públicos</li>
+                        <li><strong>Passe livre interestadual</strong> (para famílias de baixa renda)</li>
+                        <li><strong>Isenções fiscais</strong> na compra de veículos</li>
+                        <li><strong>Vagas de estacionamento</strong> para pessoas com deficiência (em alguns casos)</li>
+                    </ul>
+                </div>
+                
+                <div class="card-section">
+                    <div class="section-title">Quais leis garantem estes direitos?</div>
+                    <ul>
+                        <li><strong>Lei Federal nº 8.899/1994</strong> - Concede passe livre às pessoas com deficiência no sistema de transporte coletivo interestadual</li>
+                        <li><strong>Lei Federal nº 8.989/1995</strong> - Garante isenção de IPI na compra de veículos para pessoas com deficiência</li>
+                        <li><strong>Convênio ICMS 38/2012</strong> - Autoriza isenção de ICMS na compra de veículos para pessoas com deficiência</li>
+                        <li><strong>Lei nº 10.048/2000</strong> - Garante atendimento prioritário nos serviços de transporte</li>
+                        <li><strong>Leis estaduais e municipais</strong> - Estabelecem gratuidade em transportes locais</li>
+                    </ul>
+                </div>
+                
+                <div class="card-section">
+                    <div class="section-title">Detalhes dos benefícios</div>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-header">
+                            <div class="benefit-icon">🚍</div>
+                            <div class="benefit-title">Transporte Público Municipal</div>
+                        </div>
+                        <div class="benefit-body">
+                            <p>Em muitas cidades, pessoas com TEA têm direito à gratuidade no transporte municipal através de cartões especiais de transporte.</p>
+                            <p><strong>Em São Paulo:</strong></p>
+                            <ul>
+                                <li><strong>Bilhete Único Especial</strong> - Gratuidade para pessoa com TEA e seu acompanhante (quando necessário)</li>
+                                <li>Válido para ônibus municipais de São Paulo</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-header">
+                            <div class="benefit-icon">🚉</div>
+                            <div class="benefit-title">Transporte Intermunicipal (Região Metropolitana)</div>
+                        </div>
+                        <div class="benefit-body">
+                            <p>Para deslocamentos entre cidades de uma mesma região.</p>
+                            <p><strong>Em São Paulo:</strong></p>
+                            <ul>
+                                <li><strong>Cartão BOM Especial</strong> - Emitido pela EMTU</li>
+                                <li>Válido para ônibus intermunicipais da região metropolitana</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-header">
+                            <div class="benefit-icon">🚂</div>
+                            <div class="benefit-title">Passe Livre Interestadual</div>
+                        </div>
+                        <div class="benefit-body">
+                            <p>Para viagens entre estados. Direito garantido a pessoas com deficiência comprovadamente carentes.</p>
+                            <p><strong>Critérios:</strong></p>
+                            <ul>
+                                <li>Ter deficiência comprovada por laudo médico</li>
+                                <li>Renda familiar per capita até 1 salário mínimo</li>
+                            </ul>
+                            <p><strong>Onde solicitar:</strong> Ministério dos Transportes</p>
+                        </div>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-header">
+                            <div class="benefit-icon">🚗</div>
+                            <div class="benefit-title">Isenções na compra de veículos</div>
+                        </div>
+                        <div class="benefit-body">
+                            <p>Pessoas com TEA (ou seus responsáveis legais) podem ter direito a descontos significativos na compra de veículos através de isenções fiscais.</p>
+                            <p><strong>Isenções possíveis:</strong></p>
+                            <ul>
+                                <li><strong>IPI</strong> (Imposto sobre Produtos Industrializados) - Federal</li>
+                                <li><strong>IOF</strong> (Imposto sobre Operações Financeiras) - Federal</li>
+                                <li><strong>ICMS</strong> (Imposto sobre Circulação de Mercadorias e Serviços) - Estadual</li>
+                                <li><strong>IPVA</strong> (Imposto sobre Propriedade de Veículos Automotores) - Estadual</li>
+                            </ul>
+                            <p>O desconto total pode chegar a 30% do valor do carro.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-header">
+                            <div class="benefit-icon">🅿️</div>
+                            <div class="benefit-title">Cartão de Estacionamento</div>
+                        </div>
+                        <div class="benefit-body">
+                            <p>Em alguns casos, pessoas com TEA têm direito ao cartão de estacionamento em vagas reservadas para pessoas com deficiência (DeFis).</p>
+                            <p><strong>Em São Paulo:</strong> Emitido pelo DSV (Departamento de Operação do Sistema Viário)</p>
+                            <p><strong>Critério:</strong> Geralmente exige-se comprovação de mobilidade reduzida ou que a proximidade da vaga é necessária para segurança da pessoa com TEA</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-section">
+                    <div class="section-title">Como obter o Bilhete Único Especial em São Paulo</div>
+                    <ol class="steps-list">
+                        <li><strong>Reúna os documentos</strong> necessários (listados abaixo)</li>
+                        <li><strong>Agende atendimento</strong> na SPTrans pelo site ou telefone</li>
+                        <li><strong>Compareça no dia agendado</strong> com todos os documentos</li>
+                        <li><strong>Após aprovação</strong>, aguarde o prazo para confecção do cartão</li>
+                        <li><strong>Retire o cartão</strong> no local indicado</li>
+                    </ol>
+                    
+                    <div class="documents-list">
+                        <div class="document-item"><span class="document-icon">📄</span> Laudo médico com CID</div>
+                        <div class="document-item"><span class="document-icon">📋</span> RG/CPF ou certidão (se menor)</div>
+                        <div class="document-item"><span class="document-icon">📨</span> Comprovante de residência</div>
+                        <div class="document-item"><span class="document-icon">📸</span> Foto 3x4 recente</div>
+                        <div class="document-item"><span class="document-icon">📝</span> Formulário SPTrans preenchido</div>
+                    </div>
+                    
+                    <div class="address-box">
+                        <p><strong>SPTrans:</strong></p>
+                        <p><strong>Telefone:</strong> (11) 156 - opção 5</p>
+                    </div>
+                </div>
+                
+                <div class="card-section">
+                    <div class="section-title">Como solicitar isenções para veículo</div>
+                    <p><strong>IPI/IOF (Federal):</strong></p>
+                    <ul>
+                        <li><strong>Onde solicitar:</strong> Receita Federal</li>
+                        <li><strong>Documentos:</strong> Laudo médico de serviço público com CID, documento do veículo, documento da pessoa com TEA e do responsável</li>
+                        <li><strong>Validade:</strong> 2 anos para nova isenção</li>
+                    </ul>
+                    
+                    <p><strong>ICMS/IPVA (Estadual - SP):</strong></p>
+                    <ul>
+                        <li><strong>Onde solicitar:</strong> Secretaria da Fazenda do Estado (SEFAZ-SP)</li>
+                        <li><strong>Para ICMS:</strong> Sistema SIVEI online, com cadastro prévio</li>
+                        <li><strong>Para IPVA:</strong> Peticionamento eletrônico via site da SEFAZ</li>
+                        <li><strong>Documentos:</strong> Laudo médico detalhado, documento do veículo, CNH do condutor, comprovante de representação legal</li>
+                    </ul>
+                    
+                    <div class="alert-box">
+                        <div class="alert-title">IMPORTANTE!</div>
+                        <p>No caso da pessoa com TEA não dirigir (comum em crianças ou adultos com comprometimento severo), o benefício é concedido ao responsável legal. O laudo deve mencionar expressamente a impossibilidade de dirigir e a necessidade do veículo para transporte.</p>
+                    </div>
+                </div>
+                
+                <div class="card-section">
+                    <div class="section-title">Como obter o Cartão DeFis (estacionamento)</div>
+                    <ol class="steps-list">
+                        <li><strong>Reúna a documentação</strong> necessária</li>
+                        <li><strong>Preencha o formulário</strong> do DSV</li>
+                        <li><strong>Envie a solicitação</strong> ao DSV por correspondência ou Poupatempo</li>
+                        <li><strong>Aguarde análise</strong> do departamento</li>
+                        <li><strong>Retire o cartão</strong> no local indicado</li>
+                    </ol>
+                    
+                    <div class="documents-list">
+                        <div class="document-item"><span class="document-icon">📄</span> Laudo médico indicando dificuldade locomotora</div>
+                        <div class="document-item"><span class="document-icon">📋</span> RG da pessoa com TEA</div>
+                        <div class="document-item"><span class="document-icon">📝</span> CNH do condutor</div>
+                        <div class="document-item"><span class="document-icon">📨</span> Comprovante de residência</div>
+                        <div class="document-item"><span class="document-icon">📃</span> Formulário DSV preenchido</div>
+                    </div>
+                </div>
+                
+                <div class="card-section">
+                    <div class="section-title">Dicas importantes</div>
+                    <ul>
+                        <li>Mantenha sempre uma cópia dos laudos médicos atualizados</li>
+                        <li>Carregue a CIPTEA ou cartão de transporte para comprovar a condição</li>
+                        <li>Para isenções de veículos, consulte sempre um advogado especializado ou associações de autismo</li>
+                        <li>Guarde todos os protocolos de atendimento e solicitações</li>
+                        <li>Ao viajar para outros estados, verifique as regras locais de gratuidade em transporte</li>
+                    </ul>
+                    
+                    <div class="alert-box">
+                        <div class="alert-title">LEMBRE-SE!</div>
+                        <p>Embora o TEA não seja uma deficiência física visível, pessoas com autismo têm todos os direitos garantidos às pessoas com deficiência. Em caso de negativa ou questionamento, apresente a CIPTEA e o embasamento legal (Lei Berenice Piana).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="back-button" onclick="history.back()">← Voltar</button>
+    </div>
+
+</body></html>
